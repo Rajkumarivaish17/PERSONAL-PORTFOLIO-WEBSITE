@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2>PORTFOLIO</h2>
+            <ul>
+                <li><a href="{% url 'home_attempt_again' %}">HOME</a></li>
+                <li><a href="{% url 'about_attempt' %}">ABOUT</a></li>
+                <li><a href="{% url 'skills_attempt' %}">SKILLS</a></li>
+                <li><a href="{% url 'work_attempt' %}">MY WORK</a></li>
+                <li><a href="{% url 'contact_attempt' %}">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <div class="delete">
+            <h3>Hello, my name is</h3>
+            <h1>Rajkumari Vaishnav</h1>
+            <div class="wrapper">
+                <h2>I'm a <span class="auto-type"></span></h2>
+                
+            </div>
+            <div class="button">
+                <a href="{% static 'rajkumarivaishnavv.pdf' %}" target="_blank" >DOWNLOAD CV</a>
+            </div>
+        </div>
+        <div class="images">
+            <img src="{% static 'shape.png' %}" class="shape">
+            <img src="{% static 'rajkumari17.png' %}" class="girl">
+
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Developer","Agriculture Engineer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>

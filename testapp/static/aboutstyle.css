@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.face{
+    height: 739px;
+    width: 50%;
+    float: left;
+    background-size: cover;
+    background-color: #eff4fd;
+
+}
+#face1{
+    background-image: url("picture2.png");
+    
+}
+#face2{
+    background-image: url("picture1.png");
+    background-position: 100% 0;
+}
+#faces{
+    position: absolute;
+    left: 25%;
+    background-color: #eff4fd;
+    background: #eff4fd;
+    
+}
+.text{
+    position: absolute;
+    padding: 20px;
+    top: 40%;
+    z-index: 3;
+}
+#text1{
+    left: 50px;
+    font-style: oblique;
+    background-color: #eff4fd;
+    background: #eff4fd;
+}
+#text2{
+    right: 30px;
+    font-style: oblique;
+    background-color: #eff4fd;
+}

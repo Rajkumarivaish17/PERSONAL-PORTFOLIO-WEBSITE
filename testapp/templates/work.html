@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'work.css' %}">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <h2>PORTFOLIO</h2>
+            <ul>
+                <li><a href="{% url 'home_attempt_again' %}">HOME</a></li>
+                <li><a href="{% url 'about_attempt' %}">ABOUT</a></li>
+                <li><a href="{% url 'skills_attempt' %}">SKILLS</a></li>
+                <li><a href="{% url 'work_attempt' %}">MY WORK</a></li>
+                <li><a href="{% url 'contact_attempt_again' %}">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="box1">
+                <h1>~CRUD Project Fuction Based View with Model Form</h1>
+                <p>As modern web development involves user interaction with databases so the user needs to perform some actions with the database.In this project, performed CRUD- Create,Read,Update and Delete functions with the help of python and Django.</p>
+            </div>
+            <div class="box2">
+                <h1>~Email Verification</h1>
+                <p>Functionality includes registering users, login and logout, user authentication,Email verification and much more using Django and python. </p>
+            </div>
+            <div class="box3">
+                <h1>~Personal Portfolio Website</h1>
+                <p>I have designed and developed a portfolio to showcase my skills and projects in organized manner.The website includes a home page with an interaction to who I am,an about page which display my background , a skill page which shows my skills and expertise, and a project and contact page.</p>
+            </div>
+        </div>
+
+</body>
+</html>

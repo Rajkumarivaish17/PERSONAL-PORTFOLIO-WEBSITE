@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'skills.css' %}">
+</head>
+
+<body>
+    <div class="hero">
+        <nav>
+            <h2>PORTFOLIO</h2>
+            <ul>
+                <li><a href="{% url 'home_attempt' %}">HOME</a></li>
+                <li><a href="{% url 'about_attempt_again' %}">ABOUT</a></li>
+                <li><a href="{% url 'work_attempt_again' %}">MY WORK</a></li>
+                <li><a href="{% url 'contact_attempt_again' %}">CONTACT</a></li>
+
+            </ul>
+        </nav>
+        <div class="intro">
+            <h2>MY SKILLS</h2>
+            <h3>Here is my skills to represent my Expertise</h3>
+        </div>
+        <div class="skills">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="92%" style="max-width:92%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">JAVASCRIPT</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="80%" style="max-width:80%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">PYTHON</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="92%" style="max-width:92%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">DJANGO</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="86%" style="max-width:86%"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">MS EXCEL</div>
+                <div class="skill-bar">
+                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                </div>
+            </div>
+        </div>
+      
+</body>
+
+</html>
